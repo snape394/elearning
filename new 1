@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    File *fp;
+    char c;
+    fp=fopen(_FILE_,"r");
+    do
+    {
+        c=fgetc(fp);
+        putchar(c);
+    }
+    while(c!=EOF);
+    fclose(fp);
+    return 0;
+}
